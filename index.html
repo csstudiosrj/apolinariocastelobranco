@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apolinario e Castelo Branco | Sociedade de Advogados</title>
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Apolinario e Castelo Branco | Sociedade de Advogados">
+    <meta property="og:description" content="Tradição, ética e excelência jurídica no Rio de Janeiro. Soluções sólidas e seguras para você e sua empresa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://apolinariocastelobranco.csstudios.site/"> 
+    <meta property="og:image" content="https://apolinariocastelobranco.csstudios.site/capa.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        forestDark: '#071813', /* Verde muito escuro (quase preto) */
+                        forest: '#0C2A21', /* Verde Musgo Clássico */
+                        champagne: '#D4C3A3', /* Dourado Suave / Champanhe */
+                        champagneHover: '#B8A582',
+                        paper: '#F9F9F9'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; background-color: #071813; }
+        
+        /* Navbar Clássica */
+        .classic-nav {
+            background: rgba(7, 24, 19, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 195, 163, 0.15);
+        }
+
+        /* Cards Corporativos */
+        .corp-card {
+            background: #0C2A21;
+            border: 1px solid rgba(212, 195, 163, 0.1);
+            transition: all 0.4s ease;
+        }
+        .corp-card:hover {
+            border-color: rgba(212, 195, 163, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Fundo Hero Elegante e Corporativo */
+        .hero-bg {
+            background: linear-gradient(to right, rgba(7, 24, 19, 0.95) 30%, rgba(7, 24, 19, 0.6) 100%), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #071813; }
+        ::-webkit-scrollbar-thumb { background: #D4C3A3; }
+    </style>
+</head>
+<body class="bg-forestDark text-slate-300 font-sans overflow-x-hidden selection:bg-champagne selection:text-forestDark">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 classic-nav py-5 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            
+            <a href="#" class="flex items-center gap-4">
+                <div class="flex flex-col border-l-2 border-champagne pl-4">
+                    <span class="font-serif font-bold text-xl text-white tracking-wide leading-none uppercase">Apolinario & <br>Castelo Branco</span>
+                    <span class="text-[8px] font-semibold uppercase tracking-[0.25em] text-champagne mt-2">Sociedade de Advogados</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-300">
+                <a href="#institucional" class="hover:text-champagne transition-colors">Institucional</a>
+                <a href="#atuacao" class="hover:text-champagne transition-colors">Áreas de Atuação</a>
+                <a href="#contato" class="hover:text-champagne transition-colors">Contato</a>
+            </div>
+
+            <a href="https://wa.me/552125608126" target="_blank" class="bg-transparent border border-champagne text-champagne px-6 py-2.5 text-[10px] font-bold tracking-widest hover:bg-champagne hover:text-forestDark transition-all flex items-center gap-2 uppercase">
+                <i class="fas fa-phone-alt"></i> (21) 2560-8126
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 hero-bg z-10 border-b border-white/5">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl" data-aos="fade-right" data-aos-duration="1200">
+                
+                <div class="inline-flex items-center gap-3 mb-8">
+                    <span class="h-[1px] w-12 bg-champagne"></span>
+                    <span class="text-champagne font-semibold text-[10px] tracking-[0.3em] uppercase">Rio de Janeiro, RJ</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-serif text-white leading-[1.15] mb-6">
+                    Tradição, Ética e <br><span class="text-champagne italic">Excelência Jurídica.</span>
+                </h1>
+                
+                <p class="text-lg text-slate-400 mb-12 font-light max-w-xl leading-relaxed">
+                    Uma sociedade de advogados dedicada a oferecer soluções jurídicas sólidas, seguras e personalizadas para proteger o seu patrimônio e os seus negócios.
+                </p>
+                
+                <div class="flex flex-wrap gap-6 items-center">
+                    <a href="#contato" class="bg-champagne text-forestDark px-10 py-4 font-bold hover:bg-white transition-all uppercase tracking-widest text-xs">
+                        Fale com nossos Sócios
+                    </a>
+                    <div class="flex items-center gap-3 border-l border-white/20 pl-6">
+                        <div class="flex text-champagne text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-white font-serif text-sm italic">100% de Aprovação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institucional / Valores -->
+    <section id="institucional" class="py-24 bg-forest relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border-l-2 border-champagne" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-landmark text-3xl text-champagne mb-6"></i>
+                    <h3 class="text-white font-serif text-2xl mb-3">Solidez</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">Nossa estrutura foi forjada na experiência. Oferecemos segurança jurídica baseada em profundo conhecimento técnico e jurisprudencial.</p>
+                </div>
+                <div class="p-8 border-l-2 border-champagne" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-scale-balanced text-3xl text-champagne mb-6"></i>
+                    <h3 class="text-white font-serif text-2xl mb-3">Ética</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">A transparência é o pilar da nossa sociedade. Conduzimos cada processo com lealdade absoluta aos interesses dos nossos clientes.</p>
+                </div>
+                <div class="p-8 border-l-2 border-champagne" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-handshake text-3xl text-champagne mb-6"></i>
+                    <h3 class="text-white font-serif text-2xl mb-3">Comprometimento</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">Não tratamos casos de forma genérica. Cada cliente, seja pessoa física ou jurídica, recebe atenção direta e personalizada dos sócios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="atuacao" class="py-32 bg-forestDark border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-[10px] font-bold uppercase tracking-[0.4em] text-champagne mb-4 block">Nossa Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-white tracking-tight">Áreas de <span class="italic text-champagne">Atuação</span></h2>
+                <div class="w-16 h-[1px] bg-champagne mx-auto mt-8"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                
+                <!-- Card 1 -->
+                <div class="corp-card p-12 group" data-aos="fade-up">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-serif text-white">Direito Civil</h3>
+                        <i class="fas fa-file-signature text-2xl text-champagne opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">Elaboração e revisão de contratos, responsabilidade civil, ações indenizatórias, posse, propriedade e resolução de litígios complexos.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="corp-card p-12 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-serif text-white">Direito Empresarial</h3>
+                        <i class="fas fa-building text-2xl text-champagne opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">Assessoria jurídica preventiva e contenciosa para empresas. Sociedades, recuperação de crédito, blindagem patrimonial e compliance.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="corp-card p-12 group" data-aos="fade-up">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-serif text-white">Direito do Trabalho</h3>
+                        <i class="fas fa-users-gear text-2xl text-champagne opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">Atuação consultiva e contenciosa nas relações trabalhistas. Defesa de interesses patronais e garantia dos direitos dos trabalhadores.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="corp-card p-12 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-serif text-white">Família e Sucessões</h3>
+                        <i class="fas fa-people-roof text-2xl text-champagne opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">Condução de divórcios, pensão alimentícia, guarda, interdição, inventários e planejamento sucessório com a máxima discrição.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato & Mapa -->
+    <section id="contato" class="py-32 bg-forest relative border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Info & Mapa -->
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">Agende uma <span class="text-champagne italic">Reunião</span></h2>
+                    <p class="text-slate-400 mb-12 font-light">Receba atendimento direto de nossos sócios. Estamos localizados em Ramos, prontos para receber você ou sua empresa.</p>
+                    
+                    <div class="space-y-8 mb-12">
+                        <div class="flex items-start gap-6">
+                            <div class="w-12 h-12 border border-champagne/30 flex items-center justify-center text-champagne text-xl shrink-0"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm uppercase tracking-widest mb-1">Nosso Endereço</h4>
+                                <p class="text-slate-400 text-sm font-light">R. Uranos, 1063 - Ramos<br>Rio de Janeiro - RJ, 21060-070</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div class="w-12 h-12 border border-champagne/30 flex items-center justify-center text-champagne text-xl shrink-0"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm uppercase tracking-widest mb-1">Telefone de Contato</h4>
+                                <p class="text-slate-400 text-sm font-light">(21) 2560-8126</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-64 w-full border border-white/10 overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.025!2d-43.255866!3d-22.864448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zRMOpY2ltbyB0ZXJjZWlybyBwYXJhbGVsbyBzdWw!5e0!3m2!1spt-BR!2sbr!4v1710000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="filter grayscale hover:grayscale-0 transition duration-700"></iframe>
+                    </div>
+                </div>
+
+                <!-- Formulário Web3Forms -->
+                <div data-aos="fade-left">
+                    <div class="bg-forestDark p-10 md:p-14 border border-white/5 relative">
+                        <h3 class="text-2xl font-serif text-white mb-2">Contato Institucional</h3>
+                        <p class="text-slate-400 text-sm font-light mb-8">Preencha os dados abaixo para uma análise preliminar e sigilosa.</p>
+                        
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                            <!-- Chave CS Studios -->
+                            <input type="hidden" name="access_key" value="866dc7f0-7f5a-48ed-8c07-0f76c71689a9">
+                            <input type="hidden" name="subject" value="Novo Contato - Site Apolinario e Castelo Branco">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <div>
+                                <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">Nome Completo / Empresa</label>
+                                <input type="text" name="name" required class="w-full bg-forest border-b border-white/10 px-5 py-4 text-white focus:border-champagne outline-none transition-colors">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">E-mail</label>
+                                    <input type="email" name="email" required class="w-full bg-forest border-b border-white/10 px-5 py-4 text-white focus:border-champagne outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">Telefone</label>
+                                    <input type="text" name="phone" required class="w-full bg-forest border-b border-white/10 px-5 py-4 text-white focus:border-champagne outline-none transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">Assunto / Resumo do Caso</label>
+                                <textarea name="message" rows="4" required class="w-full bg-forest border-b border-white/10 px-5 py-4 text-white focus:border-champagne outline-none transition-colors resize-none"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-champagne text-forestDark font-bold py-5 hover:bg-white transition-all uppercase tracking-widest text-xs mt-4">
+                                Enviar Solicitação
+                            </button>
+
+                            <!-- Compliance OAB -->
+                            <p class="text-center text-[10px] text-slate-500 mt-6 font-light leading-relaxed">
+                                <i class="fas fa-lock mr-1"></i> As informações enviadas são protegidas por rigoroso sigilo profissional, conforme Código de Ética da OAB.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-forestDark">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 pb-8 border-b border-white/5">
+                <div class="flex flex-col items-center md:items-start border-l-2 border-champagne pl-4">
+                    <span class="font-serif font-bold text-lg text-white tracking-wide uppercase leading-none">Apolinario & Castelo Branco</span>
+                    <span class="text-[8px] font-semibold uppercase tracking-[0.2em] text-champagne mt-2">Sociedade de Advogados</span>
+                </div>
+                <div class="flex gap-6 text-slate-500">
+                    <a href="https://wa.me/552125608126" target="_blank" class="hover:text-champagne transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                    <a href="#contato" class="hover:text-champagne transition"><i class="fas fa-envelope text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] uppercase tracking-[0.2em] text-slate-600 font-semibold">
+                <p>Atendimento em conformidade com o Provimento 205/2021 da OAB.</p>
+                <p>
+                    Desenvolvido por 
+                    <a href="https://www.csstudios.site" target="_blank" class="text-champagne hover:text-white transition hover:underline">CS studios</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 50,
+        });
+
+        // Navbar Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if(window.scrollY > 50) {
+                nav.classList.add('shadow-2xl');
+                nav.classList.remove('py-5');
+                nav.classList.add('py-3');
+            } else {
+                nav.classList.remove('shadow-2xl');
+                nav.classList.remove('py-3');
+                nav.classList.add('py-5');
+            }
+        });
+    </script>
+</body>
+</html>
